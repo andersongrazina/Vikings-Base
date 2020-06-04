@@ -1,0 +1,289 @@
+{
+	"reseau": "Venus Roleplay",
+  
+	"themeColor": "#303f9f",
+	"colors": [
+		"#EF5350",
+		"#EC407A",
+		"#AB47BC",
+		"#7E57C2",
+		"#5C6BC0",
+		"#42A5F5",
+		"#29B6F6",
+		"#26C6DA",
+		"#26A69A",
+		"#66BB6A",
+		"#9CCC65",
+		"#D4E157",
+		"#FFCA28",
+		"#FFA726",
+		"#FF7043",
+		"#8D6E63",
+		"#78909C"
+	],
+
+	"//": "Si false, Ajoute un '-' dans le numero (###-####)",
+	"useFormatNumberFrance": false,
+
+	"//": "useWebRTCVocal: false => Appels avec channels de GTA",
+	"//": "useWebRTCVocal: true  => Appels avec WebRTC",
+	"useWebRTCVocal": false,
+	"RTCConfig": {
+		"iceServers": [{
+		"urls": ["turn:gannon.ovh"],
+		"username": "jojo",
+		"credential": "pass"
+		}]
+	},
+
+
+	"background" : {
+		"Calvin & Hobbes": "back001.jpg",
+		"Destiny": "back002.jpg",
+		"Stormtrooper": "back003.jpg",
+		"Lebron James": "back005.jpg",
+	},
+	"background_default": {
+		"label": "Destiny",
+		"value": "back002.jpg"
+	},
+
+
+	"coque": {
+		"Sansumg S8": "s8.png",
+		"Iphone X": "iphonex.png",
+		"Brick Base": "base.png",
+		"Transparent": "transparent.png"
+	},
+	"coque_default": {
+		"label": "Sansumg S8",
+		"value": "s8.png"
+	},
+
+
+	"serviceCall": [
+		{
+			"display": "Agente imobiliário",
+			"backgroundColor": "pink",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				},
+				{
+					"title": "Rendez-vous location",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				},
+				{
+					"title": "Rendez-vous achat",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "realestateagent"
+					}
+				}
+			]
+		},
+		{
+			"display": "Emergência",
+			"backgroundColor": "red",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "ambulance"
+					}
+				},
+				{
+					"title": "Acidente",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "ambulance",
+						"message": "Olá, preciso de ajuda."
+					}
+				}				
+			]		
+		},
+		{
+			"display": "Concessionária",
+			"backgroundColor": "green",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "cardealer"
+					}
+				},
+				{
+					"title": "Preciso de um veículo",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "cardealer",
+						"message": "Olá, preciso de um veículo."
+					}
+				}
+			]
+		},
+		{
+			"display": "Mecânico",
+			"backgroundColor": "grey",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano"
+					}
+				},
+				{
+					"title": "Carro parou de funcionar",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Olá, meu carro parou de funcionar, pode me ajudar?"
+					}
+				},
+				{
+					"title": "Solicitar Veículo",
+					"eventName": "esx_eden_garage:ListVehiclesMenuRemote",
+					"type": {}
+				},
+				{
+					"title": "Motor deu pane",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Olá, o motor do meu carro deu pane."
+					}
+				},
+				{
+					"title": "Acidente",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "mecano",
+						"message": "Olá, um acidente aconteceu."
+					}
+				}
+			]
+		},
+		{
+			"display": "Polícia",
+			"backgroundColor": "blue",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "police"
+					}
+				},
+				{
+					"title": "Ligar para central",
+					"eventName": "gcphone:autoCallNumber",
+					"type": {
+						"number": "911"
+					}
+				},
+				{
+					"title": "Enviar um alerta rápido",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "police",
+						"message": "Alerta Rápido de Chamado"
+					}
+				}
+			]
+		},
+		{
+			"display": "Taxi",
+			"backgroundColor": "yellow",
+			"subMenu": [
+				{
+					"title": "Enviar uma mensagem",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi"
+					}
+				},
+				{
+					"title": "Corrida rápida",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi",
+						"message": "Olá, preciso de uma corrida rápida."
+					}
+				},
+				{
+					"title": "Corrida longa",
+					"eventName": "esx_addons_gcphone:call",
+					"type": {
+						"number": "taxi",
+						"message": "Olá, preciso de uma corrida longa."
+					}
+				}
+			]
+		}
+	],
+
+	"apps": [
+		{
+			"name": "Chamadas",
+			"icons": "/html/static/img/icons_app/call.png",
+			"routeName": "appels",
+			"inHomePage": true
+		},
+		{
+			"name": "Mensagens",
+			"icons": "/html/static/img/icons_app/sms.png",
+			"routeName": "messages",
+			"inHomePage": true,
+			"puceRef": "nbMessagesUnread"
+		},
+		{
+			"name": "Contatos",
+			"icons": "/html/static/img/icons_app/contacts.png",
+			"routeName": "contacts",
+			"inHomePage": true
+		},
+		{
+			"name": "Ajustes",
+			"icons": "/html/static/img/icons_app/settings.png",
+			"routeName": "parametre",
+			"inHomePage": true
+		},
+		{
+			"name": "Banco",
+			"icons": "/html/static/img/icons_app/bank.png",
+			"routeName": "bank",
+			"inHomePage": false
+		},
+		{
+			"name": "Bolsa",
+			"icons": "/html/static/img/icons_app/bourse.png",
+			"routeName": "bourse",
+			"enabled": true
+		},
+		{
+			"name": "Foto",
+			"icons": "/html/static/img/icons_app/photo.png",
+			"routeName": "photo"
+		},
+		{
+			"name": "Dark Chat",
+			"icons": "/html/static/img/icons_app/tchat.png",
+			"routeName": "tchat"
+		},
+		{
+			"name": "9GAG",
+			"icons": "/html/static/img/icons_app/9gag.png",
+			"routeName": "9gag"
+		}
+	]
+}

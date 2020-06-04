@@ -1,0 +1,73 @@
+Locales['br'] = {
+  -- Cloakroom
+  ['cloakroom'] = 'Vestiário',
+  ['ems_clothes_civil'] = 'Roupa Normal',
+  ['ems_clothes_ems'] = 'Entrar como Socorrista',
+  -- Vehicles
+  ['veh_menu'] = 'veículo',
+  ['veh_spawn'] = 'Pressione ~INPUT_CONTEXT~ para pegar veiculo',
+  ['store_veh'] = 'Pressione ~INPUT_CONTEXT~ para guardar Veiculo ',
+  ['ambulance'] = 'Ambulância',
+  ['helicopter'] = 'Helicóptero',
+  -- Action Menu
+  ['hospital'] = 'Hospital',
+  ['revive_inprogress'] = 'Reanimação em andamento...',
+  ['revive_complete'] = 'você ressuscitou ~y~%s~s~',
+  ['revive_complete_award'] = 'você ressuscitou ~y~%s~s~, ~g~R$%s~s~',
+  ['heal_inprogress'] = 'Você está curando!',
+  ['heal_complete'] = 'você foi curado ~y~%s~s~',
+  ['no_players'] = 'Nenhum jogador nas proximidades',
+  ['no_vehicles'] = 'Sem veículos nas proximidades',
+  ['player_not_unconscious'] = 'Não está inconsciente',
+  ['player_not_conscious'] = 'esse jogador não está inconsciente!',
+  -- Boss Menu
+  ['boss_actions'] = 'Menu Administração',
+   -- Service
+  ['service_max'] = 'Você não pode ~y~entrar em serviço, máximo de socorristas em serviço: %s/%s',
+  ['service_not'] = 'Você não está em serviço! Entre em serviço primeiro.',
+  ['service_anonunce'] = 'Anúncio de serviço',
+  ['service_in'] = '~y~Você entrou em serviço!',
+  ['service_in_announce'] = 'socorrista ~y~%s~s~ ~y~entrou em serviço!',
+  ['service_out'] = 'Você saiu de serviço.',
+  ['service_out_announce'] = 'socorrista ~y~%s~s~ saiu de serviço.',
+  ['em_servico'] = '~y~Em serviço:~s~ (',
+  -- Misc
+  ['invalid_amount'] = '~r~Quantidade inválida',
+  ['open_menu'] = 'Pressione ~INPUT_CONTEXT~ para abrir o menu',
+  ['deposit_amount'] = 'Quantidade inválida para depósito',
+  ['money_withdraw'] = 'Quantidade a ser retirada',
+  ['fast_travel'] = 'Pressione ~INPUT_CONTEXT~ para mover-se rapidamente.',
+  ['open_pharmacy'] = 'Pressione ~INPUT_CONTEXT~ para abrir a farmácia.',
+  ['pharmacy_menu_title'] = 'Farmácia',
+  ['pharmacy_take'] = 'tomar <span style="color:blue;">%s</span>',
+  ['medikit'] = 'Kit Médico',
+  ['bandage'] = 'Bandagem',
+  ['max_item'] = 'você já carrega o items suficientes.',
+  -- F6 Menu
+  ['ems_menu'] = 'Interação com cidadão',
+  ['ems_menu_title'] = 'Ambulância - Interação com cidadão',
+  ['ems_menu_revive'] = 'Reanimar',
+  ['ems_menu_putincar'] = 'Colocar no veiculo',
+  ['ems_menu_small'] = 'Curar pequenas feridas',
+  ['ems_menu_big'] = 'Tratando lesões graves',
+  -- Phone
+  ['alert_ambulance'] = 'Alerta Socorro',
+  -- Death
+  ['respawn_available_in'] = 'Reviver estará disponível em ~b~%s minutos %s e segundos~s~',
+  ['respawn_bleedout_in'] = 'Você morrerá em ~b~%s minutos %s segundos~s~\n',
+  ['respawn_bleedout_prompt'] = 'Segure [~b~E~s~] para reviver',
+  ['respawn_bleedout_fine'] = 'Segure [~b~E~s~] para reviver por ~g~R$%s~s~',
+  ['respawn_bleedout_fine_msg'] = 'Você pagou ~r~$%s~s~ para reviver.',
+  ['distress_send'] = 'Pressione [~b~G~s~] para mandar um sinal de emergência para as unidades locais',
+  ['distress_sent'] = 'Sinal de emergência lançado para as unidades locais disponíveis!',
+  ['distress_message'] = 'atenção médica necessária: cidadão inconsciente!',
+  ['combatlog_message'] = 'você foi respawnadoforçadamente porque você deixou o servidor quando estava morto.',
+  -- Revive
+  ['revive_help'] = 'reviver um jogador',
+  -- Item
+  ['used_medikit'] = 'Você usou 1x Seringa',
+  ['used_bandage'] = 'Você usou 1x Bandagem',
+  ['not_enough_medikit'] = 'Você não tem ~b~Seringa~s~.',
+  ['not_enough_bandage'] = 'Você não tem ~b~Bandagem~s~.',
+  ['healed'] = 'Você foi tratado.',
+}

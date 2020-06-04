@@ -1,0 +1,60 @@
+#pagina{
+	padding-top:15px;
+	display:none;
+	background-color:#212529;
+}
+
+.navbar{
+	border-radius:4px;
+}
+
+.col-md-1{
+	padding:10px;
+	display: inline-block;
+}
+
+#home{
+	padding-top:45px;
+}
+
+.list-group a:hover{
+	display:block;
+	background-color:#212529;
+	border-radius:15px;
+	color:white;
+	text-decoration: none;
+}
+
+.list-group a{
+	color:black;
+}
+
+.col-md-8{
+	padding-top:35px;
+}
+
+.col-md-1{
+	padding:10px;
+	display: inline-block;
+}
+.img-thumbnail img{
+	width:100%;
+	border-radius:4px;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+} 
+
+.post-meta .price {
+	padding-top:15px;
+	text-align:right;
+    font-weight: bold;
+    color: #009900;
+}
+

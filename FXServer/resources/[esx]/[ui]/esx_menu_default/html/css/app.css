@@ -1,0 +1,105 @@
+@font-face {
+  font-family: bankgothic;
+  src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+  font-family: pcdown;
+  src: url('../fonts/pdown.ttf');
+}
+@font-face {
+  font-family: gzc;
+  src: url('../fonts/gzc.ttf');
+}
+@font-face {
+  font-family: inventario;
+  src: url('../fonts/sufrimeda.ttf');
+}
+.menu {
+  min-width  : 300px;
+  color      : #fff;
+  box-shadow : 0px 0px 50px 0px #000;
+  position   : absolute;
+}
+
+
+.menu.align-left {
+  right : 40;
+  bottom: 40;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-top-left {
+  right : 40;
+  bottom: 40;
+}
+
+.menu.align-top {
+  right : 40;
+  bottom: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-top-right {
+  right : 40;
+  bottom: 40;
+}
+
+.menu.align-right {
+  right : 40;
+  bottom: 40;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-bottom-right {
+  right : 40;
+  bottom: 40;
+}
+
+.menu.align-bottom {
+  right : 40;
+  bottom: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-bottom-left {
+  left  : 40;
+  bottom: 40;
+}
+
+.menu.align-center {
+  right : 40;
+  bottom: 40;
+}
+.menu.align-center-top {
+  right : 40;
+  bottom: 40;
+}
+
+.menu .head {
+  background-color: #990000;
+  text-align      : center;
+  height          : 60px;
+  line-height     : 60px;
+}
+
+.menu .menu-items {
+  font-family: gzc;  
+  max-height : 600px;
+  overflow-y : auto;
+}
+
+.menu .menu-items .menu-item {
+  height          : 60px;
+  display         : block;
+  background-color: rgba(34, 41, 41, 0.9);
+  box-shadow      : inset 1px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  height          : 50px;
+  line-height     : 25px;
+  color           : #ffffff;
+  text-align      : center;
+}
+
+.menu .menu-items .menu-item.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}

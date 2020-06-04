@@ -1,0 +1,109 @@
+﻿<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="cursor" src="cursor.png">
+
+        <div id="impound-form">
+			<h1>Formulário de Apreensão de Veículos</h1>
+			<hr>
+			<div id="veh-info">
+				<p id="owner">Venus City</p>
+				<p id="plate">PMV</p>
+			</div>
+			<hr>
+			<div id="names" class="row">
+				<label>Oficial Responsável: </label>
+				<input id="officer" class="form-control" name="officer" placeholder="Nome & Sobrenome" required=""/>
+				<label>Mecânico: </label>
+				<input id="mechanic" class="form-control" name="officer" placeholder="Nome & Sobrenome"/>
+			</div>
+			<div id="duration-row">
+				<label>Duração:* </label>
+				<div id="duration">
+					<input type="number" min="0" max="41" id="weeks" class="form-control" name="weeks" placeholder="0 - 41 Semanas"required=""/>
+					<input type="number" min="0" max="6" id="days" class="form-control" name="days" placeholder="0 - 6 Dias"required=""/>
+					<input type="number" min="0" max="23" id="hours" class="form-control" name="hours" placeholder="0 - 23 Horas"required=""/>
+				</div>
+			</div>
+			<div id="fee-row">
+					<label>Taxa:* </label>
+					<input type="number" min="500" max="50000" id="fee" class="form-control" name="fee" placeholder="R$: 500 - 50000"/>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label>Motivo da Apreensão:* </label>
+				<textarea id="reason" class="form-control" name="reason" placeholder="Os detalhes da apreensão devem ter no mínimo 25 caracteres" rows="8"></textarea>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label>Detalhes: </label>
+				<textarea id="reason" class="form-control" name="reason" placeholder="Razão da apreensão" rows="3"></textarea>
+			</div>
+			<hr>
+			<div id="errors">
+			
+			</div>
+			<div id="actions">
+				<button class="btn cancel mr" id="cancel">Cancelar</button>
+				<button class="btn success" id="impound">Apreender</button>
+			</div>
+        </div>
+		
+		<div id="retrieve-form">
+			<h1>Formulário de desapreensão de veículo</h1>
+			<span id="exit">&#x2715;</span>
+			<hr>
+			<div class="scrollable">
+				<table>
+					<thead>
+						<tr>
+							<th>Placa</th>
+							<th>Data da retirada </th>
+							<th>Taxa</th>
+							<th>Policial Responsável</th>
+							<th>Ações</th>
+						</tr>
+					</thead>
+					<tbody id="impounded-vehicles">
+						
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<p> Por que meu veículo foi apreendido? </p>
+			<textarea id="r-reason" class="form-control" disabled rows="5"></textarea>
+			<p id="hold-by" class="error"></p>
+		</div>
+		
+		<div id="admin-terminal">
+			<h1>Veículos apreendidos</h1>
+			<span id="exit">&#x2715;</span>
+			<hr>
+			<div class="scrollable">
+				<table>
+					<thead>
+						<tr>
+							<th>Placa</th>
+							<th>Data da retirada </th>
+							<th>Taxa</th>
+							<th>Policia Responsável</th>
+							<th>Ações</th>
+						</tr>
+					</thead>
+					<tbody id="admin-impounded-vehicles">
+						
+					</tbody>
+				</table>
+			</div>
+			<hr>
+			<p> Por que o veículo foi apreendido? </p>
+			<textarea id="admin-reason" class="form-control" disabled rows="5"></textarea>
+		</div>
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

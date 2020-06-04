@@ -1,0 +1,15 @@
+Locales['en'] = {
+  ['press_to_rob'] = 'Pressione ~INPUT_CONTEXT~ para ~r~assaltar~s~ o ~b~%s~s~',
+  ['robbery_timer'] = 'Roubo de Banco: ~r~%s~s~ segundos restando',
+  ['recently_robbed'] = 'Este banco foi assaltado recentemente. Espere ~y~%s~s~ segundos para assaltar este estabelecimento',
+  ['rob_in_prog'] = '~r~Assalto em progresso em ~b~%s~s~',
+  ['started_to_rob'] = 'Você iniciou um assalto em ~y~%s~s~',
+  ['alarm_triggered'] = 'O alarme foi disparado',
+  ['robbery_complete'] = '~r~O assalto foi concluido~s~, você ~o~roubou~s~ ~g~R$%s~s~',
+  ['robbery_complete_at'] = '~r~O roubo foi concluido em ~y~%s~s~',
+  ['robbery_cancelled'] = 'O assalto foi cancelado!',
+  ['robbery_cancelled_at'] = '~r~O assalto em ~b~%s~s~ foi cancelado!',
+  ['min_police'] = 'precisa ter pelo menos ~b~%s policiais~s~ na cidade para realizar o assalto.',
+  ['robbery_already'] = '~r~Um assalto já está em andamento.',
+  ['no_threat'] = 'você não representa uma ameaça para os funcionários do banco.',
+}

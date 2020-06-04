@@ -1,0 +1,16 @@
+Locales['br'] = {
+  ['not_enough_money']    = 'Você não possui dinheiro sufiente!',
+  ['truck_belongs']       = 'um caminhão com placa ~y~%s~s~ agora pertence a ~b~você~s~',
+  ['generic_shopitem']    = 'R$%s',
+  ['truck_dealer']        = 'Concessionária | Caminhões',
+  ['buy_truck_shop']      = 'tem certeza que deseja comprar %s por R$%s?',
+  ['no']                  = 'não',
+  ['yes']                 = 'sim',
+  ['truck_purchased']     = 'Você comprou um caminhão',
+  ['shop_menu']           = 'Pressione ~INPUT_CONTEXT~ para acessar o catalogo da concessionária.',
+  ['shop_awaiting_model'] = '~g~BAIXANDO & CARREGANDO~s~ por favor aguarde...',
+  ['sell_menu']           = 'Pressione ~INPUT_CONTEXT~ para vender seu ~y~%s~s~ por ~g~R$%s~s~',
+  ['license_missing']     = 'Você não possui Carteira de motorista de caminhão, portanto não poderá efeturar a compra!',
+  ['truck_sold_for']      = 'O ~b~%s~s~ foi ~y~vendido~s~ por ~g~R$%s~s~',
+  ['not_yours']           = 'Este veículo não pertence a você!',
+}

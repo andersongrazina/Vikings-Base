@@ -1,0 +1,15 @@
+Locales['br'] = {
+	['ooc_help'] = 'Digite uma mensagem fora do personagem',
+	['ooc_prefix'] = 'OOC | %s',
+	['twt_help'] = 'Mandar um tweet',
+	['twt_prefix'] = '^0[^4Twitter^0] (^5@%s^0)',
+	['me_help'] = 'Ação pessoal',
+	['me_prefix'] = 'me | %s',
+	['do_help'] = 'RP informação',
+	['do_prefix'] = 'do | %s',
+	['news_help'] = 'Anunciar notícias (não abuse)',
+	['news_prefix'] = 'news | %s',
+	['ooc_argument_name'] = 'Mensagem',
+	['ooc_argument_help'] = 'A mensagem',
+	['ooc_unknown_command'] = '^3%s^0 não é um comando válido!',
+}

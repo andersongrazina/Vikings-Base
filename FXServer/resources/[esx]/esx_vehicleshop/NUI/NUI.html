@@ -1,0 +1,860 @@
+<html lang="pt-br">
+	<head>
+		<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="NUI.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<meta charset="U+1F4B3">
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+		<script src="jquery.js"></script>
+		<script type="text/javascript" src="NUI.js"></script>
+	</head>
+<body id="pagina">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" >Concesssionaria</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item active">
+					<a class="nav-link"  id="select-home">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				   <li class="nav-item active">
+					<a class="nav-link" id="closebtn" href="#"><i class="fas fa-sign-out-alt"></i>Sair</i></a>
+				  </li>  
+				</ul>
+			</div>
+		</nav>
+	<div class="row">
+	<div class="col-md-3">
+			<p class="lead">Categorias</p>
+				<div class="list-group">
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-compacto' href="#">Compactos</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-coupe' href="#">Coupes</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-sedan' href="#">Sedans</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-esportivo' href="#">Esportivos</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-classico' href="#">Classicos</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-supers' href="#">Supers</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-muscle' href="#">Muscle</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-caminhonete' href="#">Caminhonetes</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-suvs' href="#">SUVs</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-vans' href="#">Vans</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-moto' href="#">Motos</a>
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-bicicleta' href="#">Bicicletas</a>
+				</div>
+			</div>
+			<!--Home-->
+			<div id="home">
+					<div class="jumbotron">
+					<h3>Concessionaria Venus</h3>
+					<p>Ola, seja bem vindo ao catalogo de carros da concessionaria de Venus City. Escolha o modelo de veiculo que mais lhe se encaixa com seu perfil. Temos muitos carros ha disposição!</p>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+				
+				<!--Compactos-->
+					<div id="carros-compacto">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/volkswagen-beetle-1974-template-add-on/947e2a-0_214ff5_5e186735_orig.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Volkswagen Fusca</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>1974</small>
+										<br>
+										<small><b>Velocidade: </b>110 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 14.900<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="fusca-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/honda-civic-type-r-ek9/5c9dfb-ek9_1.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Honda Civic Type-R</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>1995</small>
+										<br>
+										<small><b>Velocidade: </b>155 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 17.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="civic-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/peugeot-206-gti-add-on/697768-20170306000444_1.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Peugeot 206 GTi</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2001</small>
+										<br>
+										<small><b>Velocidade: </b>175 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 21.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="206-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/volkswagen-up-2016/4b1672-cyber_modder%20(6).jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Volkswagen UP</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2016</small>
+										<br>
+										<small><b>Velocidade: </b>135 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 22.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="up-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/2010-fiat-punto-evo-sport/dfc010-GTA5%202016-08-06%2014-23-44.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Fiat Punto</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2011</small>
+										<br>
+										<small><b>Velocidade: </b>180 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 26.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="punto-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/honda-crx-2gen-1-0-add-on-stock-tuning-parts-ghost0912/60c946-666.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Honda CRX</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>1991</small>
+										<br>
+										<small><b>Velocidade: </b>182 KM/H</small>
+										
+										<div class="price"><center>Valor: R$29.900<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="crx-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://www.gtainside.com/downloads/picr/2018-03/1520251565_1.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Citroën DS3</h4>
+											<small><b>Classe:</b> Compactos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2011</small>
+										<br>
+										<small><b>Velocidade: </b>185 KM/H</small>
+										
+										<div class="price"><center>Valor: R$57.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="ds3-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Coupe-->
+					<div id="carros-coupe">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/kia-forte-cerato-koup/04f56f-6.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>KIA Forte Koup</h4>
+											<small><b>Classe:</b> Coupes</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2010</small>
+										<br>
+										<small><b>Velocidade: </b>180 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 45.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="forte-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/honda-civic-si-99-tunable/134dc9-GTA5%202016-01-24%2019-21-24-60.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Honda Civic</h4>
+											<small><b>Classe:</b> Coupes</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>1999</small>
+										<br>
+										<small><b>Velocidade: </b>185 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 23.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="civic99-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Sedan-->
+					<div id="carros-sedan">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/2008-dacia-logan/0324e4-02.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Renault Logan</h4>
+											<small><b>Classe:</b> Sedan</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2008</small>
+										<br>
+										<small><b>Velocidade: </b>185 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 39.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="logan-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Esportivos-->
+					<div id="carros-esportivo">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/volkswagen-golf-4-1-0-add-on-stock-tuning-parts/200529-GTA5%202019-02-01%2015-01-57-57.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Volkswagen Golf 4 R32</h4>
+											<small><b>Classe:</b> Esportivos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2002</small>
+										<br>
+										<small><b>Velocidade: </b>185 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 25.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="golf-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						
+					</div>
+					<!--Classico-->
+					<div id="carros-classico">
+					</div>
+					<!--Supers-->
+					<div id="carros-supers">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/2015-nissan-gtr-nismo-yca-y97y/6b4837-5.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Nissan GT-R</h4>
+											<small><b>Classe:</b> Supers</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2017</small>
+										<br>
+										<small><b>Velocidade: </b>235 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 1.000.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="gtr-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Muscle-->
+					<div id="carros-muscle">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/1969-dodge-charger-r-t-add-on-replace-tuning-hq/86d83a-GTA5%202016-10-17%2014-59-56.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Dodge Charger</h4>
+											<small><b>Classe:</b> Esportivos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>1969</small>
+										<br>
+										<small><b>Velocidade: </b>215 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 275.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="charger69-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Caminhonetes-->
+					<div id="carros-caminhonete">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/chevrolet-silverado-10/aafa44-QQ%E5%9B%BE%E7%89%8720171009190515.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Chevrolet Silverado</h4>
+											<small><b>Classe:</b> Caminhonetes</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2010</small>
+										<br>
+										<small><b>Velocidade: </b>160 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 135.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="silverado-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q85-w800/images/2018-volkswagen-amarok-v6-add-on-replace/715b6d-GTA5%202019-01-18%2023-50-40-54.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Volkswagen Amarok</h4>
+											<small><b>Classe:</b> Caminhonetes</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>165 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 150.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="amarok-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/s10-hig-country-2017/92f7bc-2.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Chevrolet S-10</h4>
+											<small><b>Classe:</b> Caminhonetes</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2017</small>
+										<br>
+										<small><b>Velocidade: </b>170 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 185.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="s10-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--SUVs-->
+					<div id="carros-suvs">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/chevrolet-trailblazer-2017/9d358e-2017%201.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Chevrolet Trailblazer</h4>
+											<small><b>Classe:</b> SUVs</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2017</small>
+										<br>
+										<small><b>Velocidade: </b>165 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 187.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="trailblazer-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--Vans-->
+					<div id="carros-vans">
+					</div>
+					<!--Motos-->
+					<div id="carros-moto">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/2/2e/FaggioSport-GTAO-FrontQuarter.png/revision/latest?cb=20161007175817" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Pegassi Faggio</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>105 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 2.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="faggio-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/3/30/PCJ600-GTAV-FrontQuarter.png/revision/latest?cb=20180328195901" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Shitzu PCJ-600</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>125 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 7.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="pcj-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/9/9a/Akuma-GTAV-front.png/revision/latest?cb=20160127214020" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Dinka Akuma</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>165 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 15.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="akuma-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/f/f2/Avarus-GTAO-FrontQuarter.png/revision/latest?cb=20161007174507" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>LCC Avarus</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>145 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 18.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="avarus-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://img.gta5-mods.com/q95/images/custom-hexer/946e62-2016-02-03_00002.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>LCC Hexer</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>147 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 20.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="hexer-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/0/0b/Wolfsbane-GTAO-FrontQuarter.png/revision/latest?cb=20161007183623" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>WMC WolfsBane</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>147 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 22.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="wolfsbane-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="http://static3.wikia.nocookie.net/__cb20131016110823/es.gta/images/a/a9/Bati800GTAV.jpg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Pegassi Bati 801</h4>
+											<small><b>Classe:</b> Motocicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>165 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 24.000<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="bati801-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+					<!--bicicleta-->
+					<div id="carros-bicicleta">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/6/64/BMX-GTAV-front.png/revision/latest?cb=20161018175629" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>BMX</h4>
+											<small><b>Classe:</b> Bicicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>30 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 350<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="bmx-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/b/bd/Cruiser-GTAV-front.png/revision/latest/scale-to-width-down/2000?cb=20161018175937" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Cruiser</h4>
+											<small><b>Classe:</b> Bicicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>25 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="cruiser-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/7/74/Fixter-GTAV-front.png/revision/latest?cb=20161018180352" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Fixter</h4>
+											<small><b>Classe:</b> Bicicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>45 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 550<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="fixter-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/b/be/Scorcher-GTAV-front.png/revision/latest/scale-to-width-down/2000?cb=20161018180738" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Scorcher</h4>
+											<small><b>Classe:</b> Bicicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>45 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 850<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="scorcher-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail">
+									<img class="img-responsive" src="https://vignette.wikia.nocookie.net/gtawiki/images/5/5d/Tri-CyclesRaceBike-GTAV-front.png/revision/latest/scale-to-width-down/2000?cb=20161018181013" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>TriBike</h4>
+											<small><b>Classe:</b> Bicicletas</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Ano: </b>2013</small>
+										<br>
+										<small><b>Velocidade: </b>55 KM/H</small>
+										
+										<div class="price"><center>Valor: R$ 1.050<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="tribike-car">&#x1F4B3 Comprar Veiculo</button></center>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+				function hide(){
+					$("#home").css('display', 'none')
+					$("#carros-compacto").css('display', 'none')
+					$("#carros-coupe").css('display', 'none')
+					$("#carros-sedan").css('display', 'none')
+					$("#carros-esportivo").css('display', 'none')
+					$("#carros-classico").css('display', 'none')
+					$("#carros-supers").css('display', 'none')
+					$("#carros-muscle").css('display', 'none')
+					$("#carros-caminhonete").css('display', 'none')
+					$("#carros-suvs").css('display', 'none')
+					$("#carros-vans").css('display', 'none')
+					$("#carros-moto").css('display', 'none')
+					$("#carros-bicicleta").css('display', 'none')
+				}
+				hide()
+				
+				function selectCat(cat){
+					hide()
+					if(cat == "compacto"){
+						$("#carros-compacto").css('display', 'block')
+					}else if(cat == "coupe"){
+						$("#carros-coupe").css('display', 'block')
+					}else if(cat == "sedan"){
+						$("#carros-sedan").css('display', 'block')
+					}else if(cat == "esportivo"){
+						$("#carros-esportivo").css('display', 'block')
+					}else if(cat == "home"){
+						$("#home").css('display', 'block')
+					}else if(cat == "classico"){
+						$("#carros-classico").css('display', 'block')
+					}else if(cat == "supers"){
+						$("#carros-supers").css('display', 'block')
+					}else if(cat == "muscle"){
+						$("#carros-muscle").css('display', 'block')
+					}else if(cat == "caminhonete"){
+						$("#carros-caminhonete").css('display', 'block')
+					}else if(cat == "suvs"){
+						$("#carros-suvs").css('display', 'block')
+					}else if(cat == "vans"){
+						$("#carros-vans").css('display', 'block')
+					}else if(cat == "moto"){
+						$("#carros-moto").css('display', 'block')
+					}else if(cat == "bicicleta"){
+						$("#carros-bicicleta").css('display', 'block')
+					}
+				}
+
+				selectCat("home")
+				
+				$('#select-home').click(function(){ selectCat("home") })
+				$('#select-carro-compacto').click(function(){ selectCat("compacto") })
+				$('#select-carro-coupe').click(function(){ selectCat("coupe") })
+				$('#select-carro-sedan').click(function(){ selectCat("sedan") })
+				$('#select-carro-esportivo').click(function(){ selectCat("esportivo") })
+				$('#select-carro-classico').click(function(){ selectCat("classico") })
+				$('#select-carro-supers').click(function(){ selectCat("supers") })
+				$('#select-carro-muscle').click(function(){ selectCat("muscle") })
+				$('#select-carro-caminhonete').click(function(){ selectCat("caminhonete") })
+				$('#select-carro-suvs').click(function(){ selectCat("suvs") })
+				$('#select-carro-vans').click(function(){ selectCat("vans") })
+				$('#select-carro-moto').click(function(){ selectCat("moto") })
+				$('#select-carro-bicicleta').click(function(){ selectCat("bicicleta") })
+</script>
+</body>
+</html>

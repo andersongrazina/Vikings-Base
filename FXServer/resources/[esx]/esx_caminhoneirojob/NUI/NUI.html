@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="NUI.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<meta charset="ISO-8859-1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+		<script src="jquery.js"></script>
+		<script type="text/javascript" src="NUI.js"></script>
+	</head>
+<body id="pagina">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" >Cargas para caminhoneiros</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item active">
+					<a class="nav-link"  id="select-home">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				   <li class="nav-item active">
+					<a class="nav-link" id="closebtn" href="#"><i class="fas fa-sign-out-alt"></i>Sair</i></a>
+				  </li>  
+				</ul>
+			</div>
+		</nav>
+	<div class="row">
+	<div class="col-md-3">
+			<p class="lead">Categorias</p>
+				<div class="list-group">
+					<a  style="border-radius: 0;" class="list-group-item" id='select-carro-compacto' href="#">Cargas</a>
+				</div>
+			</div>
+			<!--Home-->
+			<div id="home">
+					<div class="jumbotron">
+					<h3>Menu de Cargas</h3>
+					<p>Ola, seja bem vindo ao catalogo de carros de cargas de Venus City. Escolha a categoria de carga que você prefere. Em seguida escolha a carga desejada, e prossiga para a empresa!</p>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="row">
+				
+				<!--Compactos-->
+					<div id="carros-compacto">
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive" src="https://image.flaticon.com/icons/svg/123/123281.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Carne</h4>
+											<small><b>Categoria:</b> Frigorífico</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>50 KG</small>
+										<br>
+										<small><b>Distância: </b>10.2 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.500<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="carne-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive" src="https://image.flaticon.com/icons/svg/1593/1593677.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Leite</h4>
+											<small><b>Categoria:</b> Comum</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>50 KG</small>
+										<br>
+										<small><b>Distância: </b>7.73 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.400<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="leite-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive" src="https://image.flaticon.com/icons/svg/1200/1200973.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Vinho</h4>
+											<small><b>Categoria:</b> Frágil</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>30 KG</small>
+										<br>
+										<small><b>Distância: </b>12.2 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.550<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="vinho-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+					<!--Classico-->
+
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/png/512/1296/1296164.png" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Petróleo</h4>
+											<small><b>Categoria:</b> Inflamável</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>6 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>7.73 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.300<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="petroleo-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/png/512/295/295345.png" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Produtos Químicos</h4>
+											<small><b>Categoria:</b> Tóxicos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>3 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>7.73 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.750<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="quimicos-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/svg/741/741407.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Carros</h4>
+											<small><b>Categoria:</b> Automóveis</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>7 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>7.73 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.210<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="carros-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/svg/963/963677.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Roupas</h4>
+											<small><b>Categoria:</b> Tecido</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>1 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>7.73 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.285<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="roupas-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/svg/1576/1576186.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Madeira</h4>
+											<small><b>Categoria:</b> Madeira</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>2.5 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>20 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 2.750<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="madeira-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/png/512/122/122456.png" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Tanque de Guerra</h4>
+											<small><b>Categoria:</b> Militar</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>9 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>15 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.850<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="tanque-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/svg/1676/1676788.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Frango</h4>
+											<small><b>Categoria:</b> Frigorífico</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>2.5 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>15 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 2.250<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="frango-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/png/512/1652/1652728.png" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Câmeras de Segurança</h4>
+											<small><b>Categoria:</b> Eletrônicos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>2.5 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>4 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.450<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="cameras-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+						<div class="col-sm-4 col-lg-3 col-md-1">
+							<div class="img-thumbnail" style="width:950px;">
+									<img class="img-responsive"  src="https://image.flaticon.com/icons/svg/1644/1644360.svg" alt="">
+									<hr>
+									<div class="wrapper">
+										<div class="caption post-content">
+											<h4>Carga: Documentos Confidenciais</h4>
+											<small><b>Categoria:</b> Documentos</small>
+										</div>
+									</div>
+							   
+								<div class="wrapper">
+									<div class="post-meta">
+										<small><b>Peso: </b>2.5 Toneladas</small>
+										<br>
+										<small><b>Distância: </b>15 KM</small>
+										
+										<div class="price"><center>Recompensa: R$ 1.550<center></div>
+									</div>
+								</div>
+								<br>
+								<center><button type="button" class="btn btn-success" id="documentos-carga">&#x1F69A Pegar Carga</button></center>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+				function hide(){
+					$("#home").css('display', 'none')
+					$("#carros-compacto").css('display', 'none')
+				}
+				hide()
+				
+				function selectCat(cat){
+					hide()
+					if(cat == "compacto"){
+						$("#carros-compacto").css('display', 'block')
+					}
+				}
+
+				selectCat("home")
+				
+				$('#select-home').click(function(){ selectCat("home") })
+				$('#select-carro-compacto').click(function(){ selectCat("compacto") })
+</script>
+</body>
+</html>
